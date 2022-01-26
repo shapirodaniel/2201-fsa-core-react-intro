@@ -32,38 +32,38 @@ body {
   cursor: pointer;
 }
 
-.square#square-1 {
+.square#square-0 {
   border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.square#square-1 {
   border-bottom: 1px solid black;
 }
 
 .square#square-2 {
+  border-left: 1px solid black;
   border-bottom: 1px solid black;
 }
 
 .square#square-3 {
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.square#square-4 {
   border-right: 1px solid black;
 }
 
-.square#square-6 {
+.square#square-5 {
   border-left: 1px solid black;
+}
+
+.square#square-6 {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .square#square-7 {
   border-top: 1px solid black;
-  border-right: 1px solid black;
 }
 
 .square#square-8 {
-  border-top: 1px solid black;
-}
-
-.square#square-9 {
   border-top: 1px solid black;
   border-left: 1px solid black;
 }
