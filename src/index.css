@@ -32,6 +32,11 @@ body {
   cursor: pointer;
 }
 
+.square.won,
+.square.won:hover {
+  background-color: lightgreen;
+}
+
 .square#square-0 {
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -70,4 +75,8 @@ body {
 
 .square:hover {
   background-color: rgb(223, 246, 253);
+}
+
+button {
+  margin: 1rem;
 }
