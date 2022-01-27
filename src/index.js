@@ -72,7 +72,7 @@ class App extends React.Component {
         )}
         <div className="board" onClick={(e) => this.handleMove(e)}>
           {this.state.board.map(({ id, move, won }) => (
-            <span key={id} id={id} className={`square ${won && 'won'}`}>
+            <span key={id} id={id} className={`square ${won ? 'won' : ''}`}>
               {move}
             </span>
           ))}
