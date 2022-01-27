@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// 4th later, with handleMove
 let numMoves = 0;
 
 // 2nd
