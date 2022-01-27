@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment, Component } from 'react';
 import ReactDOM from 'react-dom';
 import { checkWin } from './util/checkWin';
 import './index.css';
@@ -13,7 +13,7 @@ const initState = {
   numMoves: 0,
 };
 
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = { ...initState };
@@ -59,7 +59,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <Fragment>
         {this.state.winner && (
           <>
             <span>
@@ -77,7 +77,7 @@ class App extends React.Component {
             </span>
           ))}
         </div>
-      </>
+      </Fragment>
     );
   }
 }
