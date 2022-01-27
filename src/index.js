@@ -21,8 +21,11 @@ function App() {
 
   // 3rd
   return (
+    // wait on onClick till rest of markup done
     <div className="board" onClick={handleMove}>
       {squares.map((val) => (
+        // https://reactjs.org/docs/lists-and-keys.html
+        // talk about key in .map() fn
         <span key={val} id={`square-${val}`} className="square" />
       ))}
     </div>
