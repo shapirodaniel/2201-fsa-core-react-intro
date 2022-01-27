@@ -9,6 +9,9 @@ import { checkWin } from './util/checkWin';
 // 3
 const initBoard = new Array(9)
   .fill(null)
+  // talk about how we modified the board to objects
+  // so we can track multiple pieces of data per board square
+  // the DOM handle (square-#), and the DOM data (move: X|O)
   .map((_, idx) => ({ id: `square-${idx}`, move: null }));
 
 // 3
@@ -87,6 +90,8 @@ class App extends Component {
     const { winner, boardWithWinSequence } = checkWin(newBoard);
 
     // finally we can setState
+    // boardWithWinSequence is null until there's a win
+    // so we can shortcut that value with our newBoard
     this.setState((prevState) => ({
       board: boardWithWinSequence || newBoard,
       numMoves: ++prevState.numMoves,
